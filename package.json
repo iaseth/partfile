@@ -1,0 +1,22 @@
+{
+  "name": "partfile",
+  "version": "0.1.0",
+  "description": "Partfile formatter and validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "partfile": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iaseth/partfile.git"
+  },
+  "author": "Ankur Seth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iaseth/partfile/issues"
+  },
+  "homepage": "https://github.com/iaseth/partfile#readme"
+}
