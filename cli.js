@@ -40,15 +40,18 @@ function formatPartfile (filepath) {
 
 	let result_text = "";
 	let dashline_index = 0;
-	for (const input_line of input_lines) {
+
+	input_lines.forEach((input_line, index) => {
+		if (index !== 0) result_text += '\n';
+
 		if (input_line.startsWith('====')) {
 			const dashline_text = `=============== part ${dashline_index+1}/${dashline_count} ===============`;
-			result_text += '\n' + dashline_text;
+			result_text += dashline_text;
 			dashline_index++;
 		} else {
-			result_text += '\n' + input_line.trimRight();
+			result_text += input_line.trimRight();
 		}
-	}
+	});
 
 	fs.writeFileSync(filepath, result_text);
 	console.log(`\t==== saved (${filepath}) with ${dashline_count} parts`);

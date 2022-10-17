@@ -1,6 +1,6 @@
 {
   "name": "@iaseth/partfile",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Partfile formatter and validator",
   "main": "index.js",
   "scripts": {
